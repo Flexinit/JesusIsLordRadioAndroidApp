@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary1">#F44336</color>
+    <color name="colorPrimaryDark1">#D32F2F</color>
+    <color name="colorPrimaryDark">#1135A8</color>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="lightBlue">#63D1F4</color>
+    <color name="blueBackground">#87CEFA</color>
+    <color name="israeli_blue">#0038b8</color>
+
+    <color name="bg_gradient_start">#31244e</color>
+    <color name="bg_gradient_end">#6b394c</color>
+
+    <color name="dataTableRowBackground1">#00ffffff</color>
+    <color name="dataTableRowBackground2">#1affffff</color>
+    <color name="dataTableHeaderBackground">#1a1a1a</color>
+    <color name="dataTableSubHeaderBackground">#da212121</color>
+
+    <color name="controlButtonPressed">#80ff8400</color>
+    <color name="multiStateButtonPressed">#80ff8400</color>
+    <color name="multiStateButtonDisabled">#c1636363</color>
+
+</resources>

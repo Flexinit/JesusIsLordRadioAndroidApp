@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main.TabbedActivityMain">
+
+
+    <item
+        android:id="@+id/action_music_library"
+        android:icon="@drawable/icon_open_folder"
+        android:title="@string/r_library"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_youtube_download"
+        android:icon="@drawable/icon_file_download"
+        android:title="@string/youtube_download"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

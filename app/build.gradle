@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+//apply plugin: 'kotlin-android'
+
+//apply plugin: 'kotlin-android-extensions'
+
+//apply plugin: 'kotlin-kapt'
+
+
+
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "businessregistration.lightspace.com.radioapp"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 11
+        versionName "11.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+    }
+    buildTypes {
+        release {
+            useProguard false
+            // minifyEnabled true
+            //shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '27.0.3'
+}
+
+allprojects {
+    repositories {
+        repositories { google() }
+
+        maven { url "http://dl.bintray.com/piasy/maven" }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+repositories {
+
+    // maven { url "http://dl.bintray.com/jlmd/maven" }
+    maven { url "https://maven.google.com" }
+    google()
+
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+
+    //implementation group: 'com.android.tools.lint', name: 'lint-api', version: '26.3.1'
+    annotationProcessor 'com.google.auto.value:auto-value:1.5.2'
+
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // compile 'com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:1.5b7@aar'
+    implementation 'com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT'
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    //implementation 'com.github.florent37:viewanimator:1.1.0'
+
+    implementation 'com.github.angads25:toggle:1.1.0'
+   // implementation 'us.belka:androidtoggleswitch:1.2.2'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:26.+'
+    implementation 'com.android.support:support-core-utils:26.+'
+    implementation 'com.android.support:support-v4:26.+'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.google.firebase:firebase-core:11.0.4'
+    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+    implementation 'com.cleveroad:audiowidget:1.0.0'
+
+    implementation 'com.treebo:internetavailabilitychecker:1.0.1'
+    implementation 'com.android.support:recyclerview-v7:26.+'
+    implementation 'com.android.support:cardview-v7:26.+'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.ohoussein.playpauseview:playpauseview:1.0.2'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.8.4'
+    implementation 'com.github.piasy:AudioProcessor:1.5.3'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.3'
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4'
+    implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'
+
+      implementation 'commons-io:commons-io:2.5'
+
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'realm-android'

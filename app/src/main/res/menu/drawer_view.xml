@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/about"
+            android:title="@string/About" />
+        <!--   android:icon="@drawable/ic_menu_camera" -->
+
+        <item
+            android:id="@+id/youtubeChannel_3"
+            android:title="@string/youtubeChannel3" />
+        <item
+            android:id="@+id/youtubeChannel_2"
+            android:title="@string/youtubeChannel2" />
+
+        <item
+            android:id="@+id/youtubeChannel_1"
+            android:title="@string/youtubeChannel1" />
+
+        <item
+            android:id="@+id/call"
+            android:icon="@drawable/icon_call"
+            android:title="@string/call"
+            />
+        <item
+            android:id="@+id/call_2"
+            android:icon="@drawable/icon_call"
+            android:title="@string/call_2" />
+        <item
+            android:id="@+id/sms"
+            android:icon="@drawable/icon_sms"
+            android:title="@string/sms" />
+        <item
+            android:id="@+id/whatsapp"
+            android:icon="@drawable/icon_sms"
+            android:title="@string/whatsapp" />
+        <item
+            android:id="@+id/sendEmail"
+            android:icon="@drawable/icon_email"
+            android:title="@string/emailUs"
+
+            />
+        <!--   android:icon="@drawable/ic_menu_camera" -->
+
+
+        <!--   android:icon="@drawable/ic_menu_camera" -->
+
+        <item
+            android:id="@+id/tweet"
+            android:icon="@drawable/twitter_icon_3"
+            android:title="@string/twitter"
+
+
+            />
+        <!--   android:icon="@drawable/ic_menu_camera" -->
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/icon_share"
+            android:title="@string/share" />
+        <!--   android:icon="@drawable/ic_menu_camera" -->
+
+    </group>
+</menu>

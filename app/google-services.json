@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "353452894856",
+    "firebase_url": "https://notifications-6acf2.firebaseio.com",
+    "project_id": "notifications-6acf2",
+    "storage_bucket": "notifications-6acf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353452894856:android:8accbc72f335cbec",
+        "android_client_info": {
+          "package_name": "businessregistration.lightspace.com.radioapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353452894856-mt3ql2rq7ir4o03ondogsskh7tjk0kiq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK5RieEPamm-liDYA4obv02umXRO5Ww0Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

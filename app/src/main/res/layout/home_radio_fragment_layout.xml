@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Use DrawerLayout as root container for activity -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="businessregistration.lightspace.com.radioapp.main.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_overlapTop="100dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/logo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/jesusislordradio_icon"
+                android:visibility="visible"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="1dp" />
+
+            <Button
+                android:id="@+id/close_app"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="385dp"
+                android:background="@drawable/ic_close_app"
+                android:clickable="true"
+                android:elevation="100dp"
+                android:focusable="true"
+                android:soundEffectsEnabled="true"
+                android:visibility="visible" />
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/linkSwitch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="500dp"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:colorBorder="@color/colorAccent"
+                app:on="true" />
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/linkSwitch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:layout_marginTop="500dp"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:colorBorder="@color/colorAccent"
+                app:on="false" />
+
+            <LinearLayout
+                android:id="@+id/media_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="435dp"
+                android:background="@color/white">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    card_view:cardBackgroundColor="@color/colorPrimary"
+                    card_view:cardCornerRadius="12dp"
+                    card_view:cardElevation="3dp"
+                    card_view:contentPadding="4dp">
+
+                    <com.ohoussein.playpause.PlayPauseView
+                        android:id="@+id/play_pause_view"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="true"
+                        android:elevation="50dp"
+                        android:focusable="true"
+                        android:foreground="?android:selectableItemBackground"
+                        app:fill_color="#e1e1e1"
+                        app:pause_bg="@color/colorPrimary"
+                        app:play_bg="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:id="@+id/rec_audio"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="260dp"
+                        android:layout_marginStart="260dp"
+                        android:clickable="true"
+                        android:elevation="50dp"
+                        android:focusable="true"
+                        android:src="@drawable/record_icon" />
+
+                    <TextView
+                        android:id="@+id/recordingProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="180dp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/downloadProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:indeterminate="true"
+                        android:max="100"
+                        android:minHeight="30dp"
+                        android:minWidth="200dp"
+                        android:progress="1"
+                        android:visibility="gone" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>
